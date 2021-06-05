@@ -26,6 +26,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: |
+          sudo apt-get install xorg-dev libglu1-mesa-dev
           mkdir build
           cd build
           cmake ..
